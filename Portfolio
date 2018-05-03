@@ -73,6 +73,785 @@ To see the completed project, please click on
 </html>
 
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+img{
+  width:100%;
+  height: auto;
+  display:block;
+}
+
+/** CSS Begins **/
+
+header{
+  display:flex;
+  justify-content:space-between;
+  margin-top:20px;
+}
+
+.screen-reader-text {
+    clip: rect(1px, 1px, 1px, 1px);
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+}
+
+#skip-to-content {
+    padding: 1em;
+    position: absolute;
+    top: -40px;
+    left: 1em;
+    z-index: 1000;
+    color: white;
+    text-decoration:none;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#skip-to-content:focus {
+    position: absolute;
+    top: 0;
+    background: #8F90C0;
+}
+
+.wrapper{
+  width:90%;
+  margin:0 auto;
+}
+
+.nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align:center;
+}
+
+.nav li {
+  line-height: 40px;
+  height: 40px;
+  display:inline-block;
+}
+ 
+.nav a {
+  text-decoration: none;
+  color:#484c4f;
+  display: block;
+  padding-left:10px;
+  padding-right:10px;
+  font-size: 1.5em;
+  font-weight: bold;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.nav li a.active {
+  color:#46c7b3;
+}
+
+.nav a:hover{
+  color:#46c7b3;
+}
+
+.eaa{
+  border:5px solid #46c7b3;
+  width:5%;
+  text-align:center;
+  margin-bottom:20px;
+  padding:5px;
+  font-family: 'Varela Round', sans-serif;
+  color:#46c7b3;
+  font-size:2em;
+}
+
+.text-01{
+  margin-top:40px;
+  font-family: 'Ubuntu', sans-serif;
+  font-size:3.5em;
+  color:#484c4f;
+}
+
+.enrique_alvarez{
+  color:#46c7b3;
+  font-weight:bold;
+  font-size:1em;
+}
+
+.text-02{
+  margin-top:5px;
+  font-family: 'Ubuntu', sans-serif;
+  font-size:3.5em;
+  color:#484c4f;
+}
+
+.text-03{
+  margin-top:5px;
+  font-family: 'Ubuntu', sans-serif;
+  font-size:3.5em;
+  color:#484c4f;
+  border-bottom:5px solid #484c4f;
+  padding-bottom:15px;
+}
+
+.text-04{
+  display:inline-block;
+  margin-top:30px;
+  margin-bottom:10px;
+  font-family: 'Varela Round', sans-serif;
+  color: #484c4f;
+  font-size:1.5em;
+  font-weight:bold;
+}
+
+.sec-01{
+  display:flex;
+  justify-content:space-between;
+  flex: 1;
+  margin-top:10px;
+  margin-bottom:10px;
+}
+
+.col-01{
+  width:49.5%;
+}
+
+.text-05{
+  padding-top:120px;
+  padding-bottom:120px;
+  font-family: 'Varela Round', sans-serif;
+  color:#46c7b3;
+  font-size:2em;
+  text-align:center;
+  background-color:#484c4f;
+}
+
+.col-02{
+  width:49.3%;
+}
+
+.sec-02{
+  display:flex;
+  justify-content:space-between;
+  margin-top:10px;
+  margin-bottom:10px;
+}
+
+.sec-03{
+  border-top: 5px solid #484c4f;
+  margin-top: 10px;
+}
+
+#About_Me{
+  margin-top:20px;
+}
+
+.col-03{
+  width:49.5%;
+}
+
+.text-07{
+  margin-top:20px;
+  margin-bottom:10px;
+  font-family: 'Varela Round', sans-serif;
+  color:#484c4f;
+  font-size:1.5em;
+  font-weight:bold;
+}
+
+.col-04{
+  width:49.3%;
+}
+
+.text-08{
+  margin-top:10px;
+  margin-bottom:10px;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1.2em;
+  color: #484c4f;
+  line-height: 30px;
+}
+
+footer{
+  border-top:5px solid #484c4f;
+}
+
+.text-09{
+  margin-top:2%;
+  font-family: 'Varela Round', sans-serif;
+  color: #484c4f;
+  font-size: 1.5em;
+  font-weight:bold;
+  text-align:center;
+  margin-bottom:20px;
+}
+
+.text-10{
+  color:#46c7b3;
+  font-size:1em;
+  text-decoration:none;
+}
+
+@media only screen and (max-width: 1080px) {
+
+.text-01{
+  font-family: 'Ubuntu', sans-serif;
+  font-size:3.3em;
+  color:#484c4f;
+}
+
+.enrique_alvarez{
+  color:#46c7b3;
+  font-weight:bold;
+  font-size:1em;
+}
+
+.text-02{
+  font-family: 'Ubuntu', sans-serif;
+  font-size:3.3em;
+  color:#484c4f;
+}
+
+.text-03{
+  font-family: 'Ubuntu', sans-serif;
+  font-size:3.3em;
+  color:#484c4f;
+  border-bottom:5px solid #484c4f;
+}
+
+
+@media only screen and (max-width: 1024px) {
+
+
+.text-01{
+  font-family: 'Ubuntu', sans-serif;
+  font-size:3.1em;
+  color:#484c4f;
+}
+
+.enrique_alvarez{
+  color:#46c7b3;
+  font-weight:bold;
+  font-size:1em;
+}
+
+.text-02{
+  font-family: 'Ubuntu', sans-serif;
+  font-size:3.1em;
+  color:#484c4f;
+}
+
+.text-03{
+  font-family: 'Ubuntu', sans-serif;
+  font-size:3.1em;
+  color:#484c4f;
+  border-bottom:5px solid #484c4f;
+}
+
+@media only screen and (max-width: 960px) {
+
+.text-01{
+  font-family: 'Ubuntu', sans-serif;
+  font-size:2.9em;
+  color:#484c4f;
+}
+
+.enrique_alvarez{
+  color:#46c7b3;
+  font-weight:bold;
+  font-size:1em;
+}
+
+.text-02{
+  font-family: 'Ubuntu', sans-serif;
+  font-size:2.9em;
+  color:#484c4f;
+}
+
+.text-03{
+  font-family: 'Ubuntu', sans-serif;
+  font-size:2.9em;
+  color:#484c4f;
+  border-bottom:5px solid #484c4f;
+}
+
+@media only screen and (max-width: 900px) {
+
+.text-01{
+  font-family: 'Ubuntu', sans-serif;
+  font-size:2.7em;
+  color:#484c4f;
+}
+
+.enrique_alvarez{
+  color:#46c7b3;
+  font-weight:bold;
+  font-size:1em;
+}
+
+.text-02{
+  font-family: 'Ubuntu', sans-serif;
+  font-size:2.7em;
+  color:#484c4f;
+}
+
+.text-03{
+  font-family: 'Ubuntu', sans-serif;
+  font-size:2.7em;
+  color:#484c4f;
+  border-bottom:5px solid #484c4f;
+}
+
+@media only screen and (max-width: 835px) {
+
+.text-01{
+  font-family: 'Ubuntu', sans-serif;
+  font-size:2.5em;
+  color:#484c4f;
+}
+
+.enrique_alvarez{
+  color:#46c7b3;
+  font-weight:bold;
+  font-size:1em;
+}
+
+.text-02{
+  font-family: 'Ubuntu', sans-serif;
+  font-size:2.5em;
+  color:#484c4f;
+}
+
+.text-03{
+  font-family: 'Ubuntu', sans-serif;
+  font-size:2.5em;
+  color:#484c4f;
+  border-bottom:5px solid #484c4f;
+}
+
+@media only screen and (max-width: 795px) {
+
+.text-01{
+  font-family: 'Ubuntu', sans-serif;
+  font-size:2.3em;
+  color:#484c4f;
+}
+
+.enrique_alvarez{
+  color:#46c7b3;
+  font-weight:bold;
+  font-size:1em;
+}
+
+.text-02{
+  font-family: 'Ubuntu', sans-serif;
+  font-size:2.3em;
+  color:#484c4f;
+}
+
+.text-03{
+  font-family: 'Ubuntu', sans-serif;
+  font-size:2.3em;
+  color:#484c4f;
+  border-bottom:5px solid #484c4f;
+}
+
+}
+
+@media only screen and (max-width: 768px) {
+
+.text-01{
+  font-family: 'Ubuntu', sans-serif;
+  font-size:2.3em;
+  color:#484c4f;
+}
+
+.enrique_alvarez{
+  color:#46c7b3;
+  font-weight:bold;
+  font-size:1em;
+}
+
+.text-02{
+  font-family: 'Ubuntu', sans-serif;
+  font-size:2.3em;
+  color:#484c4f;
+}
+
+.text-03{
+  font-family: 'Ubuntu', sans-serif;
+  font-size:2.3em;
+  color:#484c4f;
+  border-bottom:5px solid #484c4f;
+}
+
+@media only screen and (max-width: 720px) {
+
+.text-01{
+  font-family: 'Ubuntu', sans-serif;
+  font-size:2.1em;
+  color:#484c4f;
+}
+
+.enrique_alvarez{
+  color:#46c7b3;
+  font-weight:bold;
+  font-size:1em;
+}
+
+.text-02{
+  font-family: 'Ubuntu', sans-serif;
+  font-size:2.1em;
+  color:#484c4f;
+}
+
+.text-03{
+  font-family: 'Ubuntu', sans-serif;
+  font-size:2.1em;
+  color:#484c4f;
+  border-bottom:5px solid #484c4f;
+}
+
+@media only screen and (max-width: 670px) {
+
+.text-01{
+  font-family: 'Ubuntu', sans-serif;
+  font-size:1.9em;
+  color:#484c4f;
+}
+
+.enrique_alvarez{
+  color:#46c7b3;
+  font-weight:bold;
+  font-size:1em;
+}
+
+.text-02{
+  font-family: 'Ubuntu', sans-serif;
+  font-size:1.9em;
+  color:#484c4f;
+}
+
+.text-03{
+  font-family: 'Ubuntu', sans-serif;
+  font-size:1.9em;
+  color:#484c4f;
+  border-bottom:5px solid #484c4f;
+}
+
+
+}
+
+@media only screen and (max-width: 605px) {
+
+header{
+  display:block;
+}
+
+.nav a {
+  text-decoration: none;
+  color:#484c4f;
+  display: block;
+  margin-top:10px;
+  padding-left:10px;
+  padding-right:10px;
+  font-size: 1.4em;
+  font-weight: bold;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.col{
+  width:30%;
+  margin:0 auto;
+}
+
+.text-01{
+  border-top:5px solid #484c4f;
+  padding-top:15px; 
+  margin-top:15px; 
+  font-family: 'Ubuntu', sans-serif;
+  font-size:1.7em;
+  color:#484c4f;
+}
+
+.enrique_alvarez{
+  color:#46c7b3;
+  font-weight:bold;
+  font-size:1em;
+}
+
+.text-02{
+  font-family: 'Ubuntu', sans-serif;
+  font-size:1.7em;
+  color:#484c4f;
+}
+
+.text-03{
+  font-family: 'Ubuntu', sans-serif;
+  font-size:1.7em;
+  color:#484c4f;
+  border-bottom:5px solid #484c4f;
+}
+
+.text-04 {
+    display: inline-block;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-family: 'Varela Round', sans-serif;
+    color: #484c4f;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.text-07 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-family: 'Varela Round', sans-serif;
+    color: #484c4f;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.text-09 {
+    margin-top: 2%;
+    font-family: 'Varela Round', sans-serif;
+    color: #484c4f;
+    font-size: 1.3em;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sec-01{
+  display:block;
+}
+
+.col-01{
+  width:100%;
+  margin:0 auto;
+  margin-bottom:10px;
+}
+
+.col-02{
+  width:100%;
+  margin:0 auto;
+}
+
+.sec-02{
+  display:block;
+}
+
+.col-03{
+  width:100%;
+  margin:0 auto;
+  margin-bottom:10px;
+}
+
+.col-04{
+  width:100%;
+  margin:0 auto;
+}
+
+}
+
+@media only screen and (max-width: 545px) {
+
+.text-01{
+  border-top:5px solid #484c4f;
+  padding-top:15px; 
+  margin-top:15px; 
+  font-family: 'Ubuntu', sans-serif;
+  font-size:1.5em;
+  color:#484c4f;
+}
+
+.enrique_alvarez{
+  color:#46c7b3;
+  font-weight:bold;
+  font-size:1em;
+}
+
+.text-02{
+  font-family: 'Ubuntu', sans-serif;
+  font-size:1.5em;
+  color:#484c4f;
+}
+
+.text-03{
+  font-family: 'Ubuntu', sans-serif;
+  font-size:1.5em;
+  color:#484c4f;
+  border-bottom:5px solid #484c4f;
+}
+
+}
+
+@media only screen and (max-width: 480px) {
+
+.nav li {
+  line-height: 40px;
+  height: 40px;
+  display:block;
+}
+
+.text-01{
+  border-top:5px solid #484c4f;
+  padding-top:15px; 
+  margin-top:15px; 
+  font-family: 'Ubuntu', sans-serif;
+  font-size:1.3em;
+  color:#484c4f;
+}
+
+.enrique_alvarez{
+  color:#46c7b3;
+  font-weight:bold;
+  font-size:1em;
+}
+
+.text-02{
+  font-family: 'Ubuntu', sans-serif;
+  font-size:1.3em;
+  color:#484c4f;
+}
+
+.text-03{
+  font-family: 'Ubuntu', sans-serif;
+  font-size:1.3em;
+  color:#484c4f;
+  border-bottom:5px solid #484c4f;
+}
+
+@media only screen and (max-width: 400px) {
+
+.nav li {
+  line-height: 40px;
+  height: 40px;
+  display:block;
+}
+
+.text-01{
+  border-top:5px solid #484c4f;
+  padding-top:15px; 
+  margin-top:15px; 
+  font-family: 'Ubuntu', sans-serif;
+  font-size:1.1em;
+  color:#484c4f;
+}
+
+.enrique_alvarez{
+  color:#46c7b3;
+  font-weight:bold;
+  font-size:1em;
+}
+
+.text-02{
+  font-family: 'Ubuntu', sans-serif;
+  font-size:1.1em;
+  color:#484c4f;
+}
+
+.text-03{
+  font-family: 'Ubuntu', sans-serif;
+  font-size:1.1em;
+  color:#484c4f;
+}
+
+.text-08 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.1em;
+    color: #484c4f;
+    line-height: 30px;
+}
+
+.text-09 {
+    margin-top: 2%;
+    font-family: 'Varela Round', sans-serif;
+    color: #484c4f;
+    font-size: 1.3em;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+}
+
+@media only screen and (max-width: 320px) {
+
+.nav a {
+  text-decoration: none;
+  color:#484c4f;
+  display: block;
+  padding-left:10px;
+  padding-right:10px;
+  font-size: 1.3em;
+  font-weight: bold;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.text-08 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.1em;
+    color: #484c4f;
+    line-height: 30px;
+}
+
+.text-09 {
+    margin-top: 2%;
+    font-family: 'Varela Round', sans-serif;
+    color: #484c4f;
+    font-size: 1.1em;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+}
+
+
 
 
 

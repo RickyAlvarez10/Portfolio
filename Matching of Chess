@@ -84,5 +84,383 @@ To see the completed project, please click on
 
 
 
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+body{
+  background-image:url('images/photo-01.jpg');
+  background-repeat:no-repeat;
+  font-family:Copperplate Gothic Light;
+  font-weight:bold;
+}
+
+/**grey boxes**/
+
+#wrapper{
+  position:relative;
+  width:1260px;
+  display:block;
+  padding:10px;
+}
+
+#wrapper:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.boxes{
+  position:relative;
+}
+
+.boxes{
+  float:left;
+  width:960px;
+  display:block;	
+  margin: 0 auto;
+}
+
+.boxes{
+  margin-top:20px;
+  margin-left:10px;
+}
+
+.boxes,.boxes01:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.boxes01{
+  margin-top:1px;
+  margin-left:20px;
+  float:left;
+}
+
+.boxes01{
+  float:left;
+}
+
+
+h3{
+  background-color:black;
+  color:white;
+  font-family: 'Archivo Black', sans-serif;
+  padding:20px;
+  width:240px;
+  text-align:center;
+}
+
+#Number_of_Matches,#Number_of_Turns{
+  background-color:orange;
+  width:240px;
+  height:130px;
+}
+
+#Number_of_Turns{
+  margin-top:40px;
+}
+
+p{
+  text-align:center;
+  height:50px;
+  font-family: 'Hammersmith One', sans-serif;
+  font-size:23px;
+}
+
+#queen,#queen1{
+  margin-top:30px;
+  margin: 0 auto;
+  display:block;
+}
+
+footer {
+  width:960px;
+  margin: 0 auto;
+  color:black;
+  float:right;
+  margin-top:20px;
+}
+
+footer {
+  clear:both;
+}
+
+h5{
+  width:600px;
+  margin-left:88px;
+}
+
+header{
+  width:960px;
+}
+
+.mc{
+  float:left;
+  margin-top:-20px;
+  margin-right:20px;
+  border: 1px solid orange;
+  width:200px;
+  font-family: 'Archivo Black', sans-serif;
+  border-radius:70%;
+  text-align:center;
+  padding:25px;
+}
+
+.bounceInDown{
+  font-family: 'Hammersmith One', sans-serif;
+}
+
+h1{
+  margin-bottom:-8px;
+  margin-right:-10px;
+  font-size:60px;
+  color:orange;
+}
+
+.btn-restart{
+  background-color: transparent;
+  border: none;
+  font-family: 'Hammersmith One', sans-serif;
+  display: block;	
+  font-size:35px;
+  color:orange;
+}
+
+.btn-restart:focus{
+  outline:none;
+}
+
+a{
+  text-decoration:none;
+  color:orange;
+  width:170px;
+  padding:10px;
+  font-size:30px;
+}
+
+a:hover{
+  text-decoration:underline;
+}
+
+
+/**first set of boxes**/
+
+.box1{
+  float:left;
+  margin-left:10px;
+  background-color:black;
+  height:220px;
+  width:230px;
+}
+
+.box2{
+  float:left;
+  margin-left:10px;
+  background-color:orange;
+  height:220px;
+  width:230px;
+}
+
+.box3{
+  float:left;
+  margin-left:10px;
+  background-color:black;
+  height:220px;
+  width:230px;
+}
+
+.box4{
+  float:left;
+  margin-left:10px;
+  background-color:orange;
+  height:220px;
+  width:230px;
+}
+
+/**second set of boxes**/
+
+.box5{
+  float:left;
+  margin-top:10px;
+  margin-left:10px;
+  background-color:orange;
+  height:220px;
+  width:230px;
+}
+
+.box6{
+  float:left;
+  margin-top:10px;
+  margin-left:10px;
+  background-color:black;
+  height:220px;
+  width:230px;
+}
+
+.box7{
+  float:left;
+  margin-top:10px;
+  margin-left:10px;
+  background-color:orange;
+  height:220px;
+  width:230px;
+}
+
+.box8{
+  float:left;
+  margin-top:10px;
+  margin-left:10px;
+  background-color:black;
+  height:220px;
+  width:230px;
+}
+
+/**third set of boxes**/
+
+.box9{
+  float:left;
+  margin-top:10px;
+  margin-left:10px;
+  background-color:black;
+  height:220px;
+  width:230px;
+}
+
+
+.box10{
+  float:left;
+  margin-top:10px;
+  margin-left:10px;
+  background-color:orange;
+  height:220px;
+  width:230px;
+}
+
+.box11{
+  float:left;
+  margin-top:10px;
+  margin-left:10px;
+  background-color:black;
+  height:220px;
+  width:230px;
+}
+
+.box12{
+  float:left;
+  margin-top:10px;
+  margin-left:10px;
+  background-color:orange;
+  height:220px;
+  width:230px;
+}
+
+.Educational{
+  float:right;
+  font-size:15px;
+  color:white;
+  font-family: 'Archivo Black', sans-serif;
+}
+
+/**Game Over Display**/
+
+#Game_Over_Box{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color:white;
+  width:730px; 
+  border-radius:15px;
+  padding:10px;
+  display:none;
+}
+
+#Game_over {
+  background-color:orange;
+  text-align:center;
+  color:white;
+  width:711px; 
+  margin-top:0;
+  margin-bottom:20px;
+  line-height: 200px;
+}
+
+#Play_Again{
+  background-color:orange;
+  color:white;
+  border: none;
+  padding:15px;
+  float:left;
+  width:350px;
+  }
+
+#Play_Again:focus{
+  outline:none;
+}
+
+#No_Thank_you{
+  border: none;
+  background-color:orange;
+  color:white;
+  padding:15px;
+  float:left;	
+  margin-left:10px;
+  width:350px;
+}
+
+#No_Thank_you:focus{
+  outline:none;
+}
+
+/* Chess player images styles */
+
+.box img {
+  display: block;
+  width: 50%;
+    /* height: auto; */
+  margin: 0 auto;
+}
+
+.box img[src="images/chess-6.png"]{
+	margin-top: 30px;
+}
+
+.box img[src="images/chess-1.png"]{
+	margin-top: 20px;
+}
+
+.box img[src="images/chess-5.png"]{
+	margin-top: 20px;
+}
+
+.box img[src="images/chess-3.png"]{
+	margin-top: 35px;
+}
+
+.box img[src="images/chess-4.png"]{
+	margin-top: 20px;
+}
+
+.box img {
+	display:none;
+}
+
+.box.flipped img{
+	display: block; 
+}
+
+
+
+
+ 
+
+
+
 
 
